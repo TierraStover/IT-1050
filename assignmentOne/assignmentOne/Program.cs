@@ -57,7 +57,7 @@ public class Program
 
 		Console.WriteLine("\n\tYour Height of " + heightFeet + " Feet and " + heightInches + " Inches is equal to " + totalHeightCM + " Centimeters");
 
-		Console.WriteLine("\nEligible To Vote?(True/False):" + " " + canVote);
+		Console.WriteLine("\tEligible To Vote?(True/False):" + " " + canVote);
 
 		Console.WriteLine("\n\t\t\tPress Any Key To Close The Window");
 		Console.ReadKey();
