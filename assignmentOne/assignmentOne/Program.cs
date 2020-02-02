@@ -37,7 +37,9 @@ public class Program
 
 		fullName = firstName + " " + middleInitial + " " + lastName;
 
-		Console.Write("\nAre you an US Citizen?(Yes/No):");
+		Console.Write("\nTo be eligible to vote, you must be:\n\n\t(1) a citizen,and\n\t(2) you must be at least 18 years old.");
+		
+		Console.Write("\n\nAre you an US Citizen?(Yes/No):");
 		isCitizen = Console.ReadLine().ToUpper().StartsWith("Y");
 
 		Console.Write("Please Enter Your Age:");
@@ -53,11 +55,11 @@ public class Program
 		}
 		Console.WriteLine("\n\n\t\t\t" + fullName + "'s Results:");
 
-		Console.WriteLine("\nYour Height of " + heightFeet + " Feet and " + heightInches + " Inches is equal to " + totalHeightCM + " Centimeters");
+		Console.WriteLine("\n\tYour Height of " + heightFeet + " Feet and " + heightInches + " Inches is equal to " + totalHeightCM + " Centimeters");
 
-		Console.WriteLine("You Are Eligible To Vote:" + " " + canVote);
+		Console.WriteLine("\Eligible To Vote?(True/False)" + " " + canVote);
 
-		Console.WriteLine("\n\n\t\tPress Any Key To Close The Window");
+		Console.WriteLine("\n\t\t\tPress Any Key To Close The Window");
 		Console.ReadKey();
 
 	}
