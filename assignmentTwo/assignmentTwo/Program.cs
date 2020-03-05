@@ -68,7 +68,7 @@ namespace assignmentTwo
 
 
             #region Code For Couples' Goals Results 
-           Person.SumOfAllAges = 0;
+           
            Console.WriteLine("\n\t\t\t[Couples' Goals Results]\n");
            p1.PrintNameAndAge();
            p1.Spouse.PrintNameAndAge();
