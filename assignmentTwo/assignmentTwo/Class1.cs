@@ -22,8 +22,8 @@ namespace assignmentTwo
 
         public void PrintNameAndAge()
         {
-            
-          
+
+            Console.WriteLine(this.GetFullName() +", "+ this.Age + " Years Old");
         }
     }
 }
