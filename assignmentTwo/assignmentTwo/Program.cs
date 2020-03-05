@@ -76,7 +76,9 @@ namespace assignmentTwo
            Person.SumOfAllAges += p2.Spouse.Age;
            Person.SumOfAllAges/=4;
 
-           Console.WriteLine("\nThe Average Age Of " + p1.FirstName + ", " + p1.Spouse.FirstName +", " + p2.FirstName + " And " + p2.Spouse.FirstName + " Is "  + Person.SumOfAllAges + ".");
+           Console.WriteLine("\n\tThe Average Age of " + p1.FirstName + ", " + p1.Spouse.FirstName +", " + p2.FirstName + " and " + p2.Spouse.FirstName + " is "  + Person.SumOfAllAges + ".");
+           
+           Console.WriteLine("\n\t\t\tPress Any Key To Close This Window");
            Console.ReadKey();
             #endregion
         }

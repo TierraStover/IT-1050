@@ -23,7 +23,7 @@ namespace assignmentTwo
         public void PrintNameAndAge()
         {
 
-            Console.WriteLine(this.GetFullName() +" is "+ this.Age + " Years Old.");
+            Console.WriteLine(this.GetFullName() +" is "+ this.Age + " years old.");
         }
     }
 }
