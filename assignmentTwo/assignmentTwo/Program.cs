@@ -12,7 +12,7 @@ namespace assignmentTwo
         {
             #region Code for Couple One
            
-            Console.WriteLine("\tPlease Enter The Names Of Two Couples You Know or Admire\n\t\t(Ex: Yourself, Parents or Celebrities)");
+            Console.WriteLine("\tPlease Enter The Names Of Two Couples You Know or Admire\n\t\t(Ex: Yourself, Relatives or Celebrities)");
             Console.WriteLine("\n\t\t\t[Couple One's Information]");
             Person p1 = new Person();
             p1.Spouse = new Person();
@@ -76,7 +76,7 @@ namespace assignmentTwo
            Person.SumOfAllAges += p2.Spouse.Age;
            Person.SumOfAllAges/=4;
 
-           Console.WriteLine("\nThe Average Of All The Ages Is " + Person.SumOfAllAges);
+           Console.WriteLine("\nThe Average Age Of " + p1.FirstName + ", " + p1.Spouse.FirstName +", " + p2.FirstName + " And " + p2.Spouse.FirstName + " Is "  + Person.SumOfAllAges + ".");
            Console.ReadKey();
             #endregion
         }
