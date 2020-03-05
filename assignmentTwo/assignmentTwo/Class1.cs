@@ -16,13 +16,14 @@ namespace assignmentTwo
         public static double SumOfAllAges;
 
         public string GetFullName()
-        { 
-          
+        {
+            return this.FirstName + " " + this.LastName;
         }
 
         public void PrintNameAndAge()
         {
-
+            
+          
         }
     }
 }
