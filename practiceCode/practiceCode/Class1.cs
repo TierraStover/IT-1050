@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace assignmentTwo
+namespace practiceCode
 {
     class Person
     {
@@ -25,9 +25,9 @@ namespace assignmentTwo
 
             Console.WriteLine(this.GetFullName() + " is " + this.Age + " years old.");
         }
-        public void GetPerson(string Choice)
+        public void  GetPerson(string Choice)
         {
-            Console.Write("\nPlease Enter Your " + Choice + "'s First Name: ");
+            Console.Write("\nPlease Enter Your "+ Choice + "'s First Name: ");
             FirstName = Console.ReadLine();
 
             Console.Write("Please Enter Your " + Choice + "'s  Last Name: ");
@@ -44,8 +44,7 @@ namespace assignmentTwo
             Console.Write("Please Enter " + Spouse.FirstName + "'s " + "Age: ");
             Spouse.Age = int.Parse(Console.ReadLine());
 
-
+            
         }
     }
-
 }
