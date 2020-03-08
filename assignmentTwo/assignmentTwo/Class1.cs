@@ -12,7 +12,6 @@ namespace assignmentTwo
         public string FirstName;
         public string LastName;
         public Person Spouse;
-
         public static double SumOfAllAges;
 
         public string GetFullName()
@@ -22,9 +21,9 @@ namespace assignmentTwo
 
         public void PrintNameAndAge()
         {
-
             Console.WriteLine(this.GetFullName() + " is " + this.Age + " years old.");
         }
+
         public void GetPerson(string Choice)
         {
             Console.Write("\nPlease Enter Your " + Choice + "'s First Name: ");
@@ -43,8 +42,6 @@ namespace assignmentTwo
 
             Console.Write("Please Enter " + Spouse.FirstName + "'s " + "Age: ");
             Spouse.Age = int.Parse(Console.ReadLine());
-
-
         }
     }
 

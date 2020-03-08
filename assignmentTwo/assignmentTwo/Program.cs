@@ -20,6 +20,7 @@ namespace assignmentTwo
             Console.WriteLine("\n\t\t\t[Couple One's Information]");
 
             p1.GetPerson("First Choice");
+
             p1.Spouse.Spouse = p1;
 
             #endregion
@@ -37,15 +38,14 @@ namespace assignmentTwo
 
             #endregion
 
-
             #region Code For Couples' Goals Results 
 
             Console.WriteLine("\n\t\t\t[Couples' Goals Results]\n");
+            
             p1.PrintNameAndAge();
             p1.Spouse.PrintNameAndAge();
             p2.PrintNameAndAge();
             p2.Spouse.PrintNameAndAge();
-
 
             Person.SumOfAllAges += p1.Age;
             Person.SumOfAllAges += p1.Spouse.Age;
