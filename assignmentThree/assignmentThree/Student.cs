@@ -12,9 +12,17 @@ namespace assignmentThree
         private int Grade;
         private Instructor Teacher;
 
-        public void SetGrade()
+        public Student(string theirName, int theirGrade, Instructor theirTeacher)
         {
-
+            
+            this.Name = theirName;
+            this.Grade = theirGrade;
+            this.Teacher = theirTeacher;
+        }
+        public void SetGrade(int grade)
+        {
+            
+            this.Grade += grade;
         }
     }
 }
