@@ -44,11 +44,11 @@ namespace assignmentThree
             Melissa.SetGrade(90);
             Matt.SetGrade(92);
 
-            Console.WriteLine("\n\t\t[Courses Offerings]");
+            Console.WriteLine("\n\t\t   [Courses Offerings]");
             Console.Write(John.GetInstructor());
-            Console.WriteLine("\n"+ Mike.GetInstructor());
+            Console.WriteLine("\n" + Mike.GetInstructor());
 
-            Console.WriteLine("\n\t\t[Enrolled Students]");
+            Console.WriteLine("\n\t\t\t  [Enrolled Students]");
             Console.WriteLine(Jane.GetStudent());
             Console.WriteLine(Joe.GetStudent());
             Console.WriteLine(Melissa.GetStudent());
@@ -56,7 +56,7 @@ namespace assignmentThree
 
             #endregion
 
-
+            Console.WriteLine("\n\t\tPress Any Key To Close This Window");
             Console.ReadKey();
         }
     }
