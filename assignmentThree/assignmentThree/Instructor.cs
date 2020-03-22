@@ -10,22 +10,25 @@ namespace assignmentThree
     {
         private string Name;
         private string CourseName;
+        private Student Pupil;
+        private int Grade;
 
-        public Instructor(string student, string coursename)
+        public Instructor(string Name, string CourseName)
         {
-            
-            this.Name =student;
-            this.CourseName = coursename;
-          
+
+            this.Name = Name;
+            this.CourseName = CourseName;
+
         }
 
-        public void GetInstructor()
+        public string GetInstructor()
         {
-            Console.WriteLine(Name + " teaches " + CourseName + ".");
+            return "\n\tIntructor: " +this.Name + "\n\tCourse: " + this.CourseName;
         }
-        public void SetStudentGrade(string Student, int Grade)
+        public void SetStudentGrade(Student pupil, int grade)
         {
-            Console.WriteLine(Student + " got a " + Grade +".");
+            this.Pupil = pupil;
+            this.Grade = grade;
         }
     }
 }

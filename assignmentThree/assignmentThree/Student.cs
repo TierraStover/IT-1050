@@ -12,17 +12,26 @@ namespace assignmentThree
         private int Grade;
         private Instructor Teacher;
 
-        public Student(string theirName, int theirGrade, Instructor theirTeacher)
+        public Student(Instructor Teacher, string Name, int Grade)
         {
-            
-            this.Name = theirName;
-            this.Grade = theirGrade;
-            this.Teacher = theirTeacher;
+
+            this.Name = Name;
+           this.Grade = Grade;
+            this.Teacher = Teacher;
+
         }
+
         public void SetGrade(int grade)
         {
-            
+
             this.Grade += grade;
         }
+
+        public string GetStudent()
+        {         
+          return "\n\tStudent Name: " + this.Name + "\n\tGrade: " + this.Grade;    
+        }
+
+        
     }
 }
