@@ -23,7 +23,7 @@ namespace assignmentThree
 
         public string GetInstructor()
         {
-            return "\n\tIntructor: " +this.Name + "\n\tCourse: " + this.CourseName;
+            return "\n\tIntructor: " +this.Name + "\tCourse: " + this.CourseName;
         }
         public void SetStudentGrade(Student pupil, int grade)
         {

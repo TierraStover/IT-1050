@@ -29,7 +29,7 @@ namespace assignmentThree
 
         public string GetStudent()
         {         
-          return "\n\tStudent Name: " + this.Name + "\n\tGrade: " + this.Grade;    
+          return "\n Student Name: " + this.Name + "\n" + Teacher.GetInstructor() + "\t Grade: " + this.Grade +"\n";    
         }
 
         

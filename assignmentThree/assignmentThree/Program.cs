@@ -33,10 +33,7 @@ namespace assignmentThree
             #endregion
 
             #region Print Section
-            Console.WriteLine("\n[Courses Offerings]");
-            Console.WriteLine(John.GetInstructor());
-            Console.WriteLine(Mike.GetInstructor());
-
+           
             John.SetStudentGrade(Jane, 95);
             John.SetStudentGrade(Joe, 85);
             Mike.SetStudentGrade(Melissa, 90);
@@ -46,13 +43,16 @@ namespace assignmentThree
             Joe.SetGrade(85);
             Melissa.SetGrade(90);
             Matt.SetGrade(92);
-         
-            Console.WriteLine("\n[Enrolled Students]");
-            Console.WriteLine(Jane.GetStudent() + John.GetInstructor());
-            Console.WriteLine(Joe.GetStudent() + John.GetInstructor());
-            Console.WriteLine(Melissa.GetStudent() + Mike.GetInstructor());
-            Console.WriteLine(Matt.GetStudent() + Mike.GetInstructor());
 
+            Console.WriteLine("\n\t\t[Courses Offerings]");
+            Console.Write(John.GetInstructor());
+            Console.WriteLine("\n"+ Mike.GetInstructor());
+
+            Console.WriteLine("\n\t\t[Enrolled Students]");
+            Console.WriteLine(Jane.GetStudent());
+            Console.WriteLine(Joe.GetStudent());
+            Console.WriteLine(Melissa.GetStudent());
+            Console.WriteLine(Matt.GetStudent());
 
             #endregion
 
