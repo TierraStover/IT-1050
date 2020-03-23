@@ -44,7 +44,7 @@ namespace assignmentThree
             Melissa.SetGrade(90);
             Matt.SetGrade(92);
 
-            Console.WriteLine("\n\t\t   [Courses Offerings]");
+            Console.WriteLine("\n\t\t   [Course Offerings]");
             Console.Write(John.GetInstructor());
             Console.WriteLine("\n" + Mike.GetInstructor());
 
