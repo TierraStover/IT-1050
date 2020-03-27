@@ -34,10 +34,10 @@ namespace assignmentThree
 
             #region Print Section
            
-            John.SetStudentGrade(Jane, 95);
-            John.SetStudentGrade(Joe, 85);
-            Mike.SetStudentGrade(Melissa, 90);
-            Mike.SetStudentGrade(Matt, 92);
+            John.SetStudentGrade("Jane Austen", 95);
+            John.SetStudentGrade("Joe Pesci", 85);
+            Mike.SetStudentGrade("Melissa McCarthy", 90);
+            Mike.SetStudentGrade("Matt Damon", 92);
 
             Jane.SetGrade(95);
             Joe.SetGrade(85);

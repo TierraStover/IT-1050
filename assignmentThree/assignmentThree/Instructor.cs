@@ -10,9 +10,8 @@ namespace assignmentThree
     {
         private string Name;
         private string CourseName;
-        private Student Pupil;
-        private int Grade;
-
+        private string StudentName;
+        private int StudentGrade;
         public Instructor(string Name, string CourseName)
         {
 
@@ -25,10 +24,10 @@ namespace assignmentThree
         {
             return "\n\tIntructor: " +this.Name + "\tCourse: " + this.CourseName;
         }
-        public void SetStudentGrade(Student pupil, int grade)
+        public void SetStudentGrade(string studentName, int studentGrade)
         {
-            this.Pupil = pupil;
-            this.Grade = grade;
+            this.StudentName = studentName;
+            this.StudentGrade = studentGrade;
         }
     }
 }
