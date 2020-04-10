@@ -8,5 +8,23 @@ namespace assignmentFour
 {
     class Discounts
     {
+
+        public void GetDiscount() 
+        {
+            //if(candy >=4 || candy %4 == 0)
+            //{
+            //cPrice-1.99
+            //Console.WriteLine("One Free Candy");
+            //}
+            //if(eventix >=3)
+            //{
+            //Console.WriteLine("Free Bag of Popcorn");
+            //}
+            //if(popcorn==lDrink)
+            //{
+            //
+            //}
+        }
+
     }
 }

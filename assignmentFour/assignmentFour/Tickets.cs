@@ -8,5 +8,9 @@ namespace assignmentFour
 {
     class Tickets
     {
+        public void GetTickets()
+        {
+
+        }
     }
 }

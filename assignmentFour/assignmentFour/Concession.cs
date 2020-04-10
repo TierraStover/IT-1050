@@ -8,5 +8,9 @@ namespace assignmentFour
 {
     class Concession
     {
+        public void GetConcession()
+        {
+            
+        }
     }
 }
