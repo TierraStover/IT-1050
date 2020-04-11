@@ -8,22 +8,36 @@ namespace assignmentFour
 {
     class Discounts
     {
-
+        public static double TotalSavings=0;
+        public static double cDiscount=0;
+        public static double TixDiscount=0;
         public void GetDiscount() 
         {
-            //if(candy >=4 || candy %4 == 0)
-            //{
-            //cPrice-1.99
-            //Console.WriteLine("One Free Candy");
-            //}
-            //if(eventix >=3)
-            //{
-            //Console.WriteLine("Free Bag of Popcorn");
-            //}
-            //if(popcorn==lDrink)
-            //{
-            //
-            //}
+            if(Concession.Candy >=4 || Concession.Candy % 4 == 0)
+            {
+            Concession.cPrice -= 1.99;
+            Console.WriteLine("One Free Candy");
+            }
+            else
+            {
+
+            }
+            if(Tickets.TicketCost >=3)
+            {
+           Console.WriteLine("Free Bag of Popcorn");
+            }
+            else 
+            { 
+            }
+           if(Concession.Popcorn >=1 && Concession.lDrink >=1)
+            {
+             Tickets.eTicketCost -= 2;
+            Console.WriteLine("$2 Off Your Movie Ticket");
+            }
+            else 
+            {
+            }
+            Discounts.TotalSavings = Concession.cPrice + Tickets.TicketCost;
         }
 
     }
