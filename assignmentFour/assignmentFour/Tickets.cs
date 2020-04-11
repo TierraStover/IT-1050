@@ -12,6 +12,8 @@ namespace assignmentFour
         public static double mTicketCost;
         public static double eTicketCost;
         public static double eTickets;
+        public static double TixDiscount;
+        public static double offTix;
 
         public void GetTickets()
         {

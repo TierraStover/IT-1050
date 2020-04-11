@@ -10,9 +10,10 @@ namespace assignmentFour
     {
         public static double ConcessionCost;
         public static double Popcorn;
-        public static double lDrink=0;
+        public static double lDrink;
         public static double Candy;
-        public static double cPrice=0;
+        public static double FreeCandy;
+        public static double cDiscount;
         public void GetConcession()
         {
 
@@ -26,7 +27,7 @@ namespace assignmentFour
                 double sDrink = double.Parse(Console.ReadLine());
 
                 Console.Write(" How Many Large Drinks? : ");
-                double lDrink = double.Parse(Console.ReadLine());
+                lDrink = double.Parse(Console.ReadLine());
 
                 Console.Write(" How Many Hot Dogs? : ");
                 double hDog = double.Parse(Console.ReadLine());
