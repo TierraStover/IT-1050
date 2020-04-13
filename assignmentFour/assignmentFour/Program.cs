@@ -13,29 +13,31 @@ namespace assignmentFour
          
             Tickets tix = new Tickets();
             Concession snacks = new Concession();
-            //Discounts swag = new Discounts();
+           
 
             tix.GetTickets();
             snacks.GetConcession();
 
-            //swag.GetDiscount();
+           
             Tickets.TicketCost = Tickets.mTicketCost + Tickets.eTicketCost;
            
             if (Concession.Candy >= 4 || Concession.Candy % 4==0)
                 {
-                Concession.FreeCandy = 1.99;
-                Concession.cDiscount = Concession.ConcessionCost-=Concession.FreeCandy;
+                Concession.FreeCandy = (Concession.Candy/4) * 1.99;
+                Concession.cDiscount = Concession.ConcessionCost-Concession.FreeCandy;
                 Console.WriteLine(Concession.cDiscount);
-                    Console.WriteLine("One Free Candy");
+                    Console.WriteLine((" Free Candy: " + Concession.Candy/4));
                 }
                 else
                 {
 
                 }
-                if (Tickets.TicketCost >= 3)
+                if (Tickets.eTickets >= 3 && Concession.Popcorn>0)
                 {
-                
-                    Console.WriteLine("Free Bag of Popcorn");
+
+                Concession.offPop = 4.50;
+                Concession.pDiscount = Concession.pPrice - Concession.offPop;
+                Console.WriteLine(" Free Bag of Popcorn: One");
 
                 }
                 else
@@ -44,14 +46,14 @@ namespace assignmentFour
                 if (Concession.Popcorn >=1 && Concession.lDrink >=1)
                 {
                 Tickets.offTix = 2;
-                Tickets.TixDiscount = Tickets.TicketCost -= Tickets.offTix;
-                    Console.WriteLine("$2 Off Your Movie Ticket");
+                Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
+                    Console.WriteLine(" Amount Off Your Movie Ticket(s): ");
                 }
                 else
                 {
                 }
 
-            double Discount=Concession.FreeCandy + Tickets.offTix;
+            double Discount=Concession.FreeCandy + Tickets.offTix + Concession.offPop;
             double TotalCost = ((Tickets.TicketCost + Concession.ConcessionCost)-Discount);
 
             Console.WriteLine("\n\t\tThe Stover Movie Theater Receipt");

@@ -14,6 +14,9 @@ namespace assignmentFour
         public static double Candy;
         public static double FreeCandy;
         public static double cDiscount;
+        public static double pDiscount;
+        public static double pPrice;
+        public static double offPop;
         public void GetConcession()
         {
 
