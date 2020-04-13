@@ -23,11 +23,12 @@ namespace assignmentFour
            
             if (Concession.Candy >= 4 || Concession.Candy % 4==0)
                 {
-                Concession.FreeCandy = (Concession.Candy/4) * 1.99;
-                Concession.cDiscount = Concession.ConcessionCost-Concession.FreeCandy;
+                Concession.FreeCandy = (Concession.Candy / 4) * 1.99;
+                Concession.cDiscount = Concession.ConcessionCost - Concession.FreeCandy;
                 Console.WriteLine(Concession.cDiscount);
-                    Console.WriteLine((" Free Candy: " + Concession.Candy/4));
-                }
+                Console.WriteLine((" Free Candy: " + Concession.Candy / 4));
+
+            }
                 else
                 {
 
@@ -43,15 +44,26 @@ namespace assignmentFour
                 else
                 {
                 }
-                if (Concession.Popcorn >=1 && Concession.lDrink >=1)
+            if (Concession.Popcorn >= 1 && Concession.lDrink >= 1)
+            {
+                if (Concession.Popcorn < Concession.lDrink)
                 {
-                Tickets.offTix = 2;
-                Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
-                    Console.WriteLine(" Amount Off Your Movie Ticket(s): ");
+                    Tickets.offTix = Concession.Popcorn * 2;
+                    Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
+                    Console.WriteLine(" Amount Off Your Movie Ticket(s): " + Tickets.offTix);
                 }
                 else
                 {
+                    Tickets.offTix = Concession.lDrink* 2;
+                    Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
+                    Console.WriteLine(" Amount Off Your Movie Ticket(s): " + Tickets.offTix);
                 }
+
+            }
+        
+            else
+            {
+            }
 
             double Discount=Concession.FreeCandy + Tickets.offTix + Concession.offPop;
             double TotalCost = ((Tickets.TicketCost + Concession.ConcessionCost)-Discount);
