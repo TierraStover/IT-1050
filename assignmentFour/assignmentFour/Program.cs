@@ -18,15 +18,15 @@ namespace assignmentFour
             tix.GetTickets();
             snacks.GetConcession();
 
-           
+            Console.WriteLine("\n\tThe Stover-Cunningham Movie Theater Receipt");
+
             Tickets.TicketCost = Tickets.mTicketCost + Tickets.eTicketCost;
            
             if (Concession.Candy >= 4 || Concession.Candy % 4==0)
                 {
                 Concession.FreeCandy = (Concession.Candy / 4) * 1.99;
                 Concession.cDiscount = Concession.ConcessionCost - Concession.FreeCandy;
-                Console.WriteLine(Concession.cDiscount);
-                Console.WriteLine((" Free Candy: " + Concession.Candy / 4));
+                Console.WriteLine(" \n\t\tYou Earned "  + Concession.Candy / 4 + " Free Boxes of Candy ");
 
             }
                 else
@@ -38,7 +38,7 @@ namespace assignmentFour
 
                 Concession.offPop = 4.50;
                 Concession.pDiscount = Concession.pPrice - Concession.offPop;
-                Console.WriteLine(" Free Bag of Popcorn: One");
+                Console.WriteLine(" \t\tYou Have Earned 1 FREE Popcorn");
 
                 }
                 else
@@ -50,13 +50,13 @@ namespace assignmentFour
                 {
                     Tickets.offTix = Concession.Popcorn * 2;
                     Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
-                    Console.WriteLine(" Amount Off Your Movie Ticket(s): " + Tickets.offTix);
+                    Console.WriteLine(" \t\tYou Have Earned $" + Tickets.offTix + " OFF Your Ticket(s) ");
                 }
                 else
                 {
                     Tickets.offTix = Concession.lDrink* 2;
                     Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
-                    Console.WriteLine(" Amount Off Your Movie Ticket(s): " + Tickets.offTix);
+                    Console.WriteLine(" \t\tYou Have Earned $" + Tickets.offTix + " OFF Your Ticket(s): ");
                 }
 
             }
@@ -68,11 +68,13 @@ namespace assignmentFour
             double Discount=Concession.FreeCandy + Tickets.offTix + Concession.offPop;
             double TotalCost = ((Tickets.TicketCost + Concession.ConcessionCost)-Discount);
 
-            Console.WriteLine("\n\t\tThe Stover Movie Theater Receipt");
-                Console.WriteLine(" \n\t\t\tTickets: " + Tickets.TicketCost + "\n\t\t\tConcession: " + Concession.ConcessionCost);
-                Console.WriteLine("\t\t\tDiscount: "+Discount+"  \n\t\t\tTotal: " + TotalCost);
-                Console.WriteLine("\n\t\tPress Any Key To Close Window");
-                Console.ReadKey();   
+
+            Console.WriteLine(" \n\t\t\tTickets: " + Tickets.TicketCost);
+            Console.WriteLine( "\t\t\tConcession: " + Concession.ConcessionCost);
+            Console.WriteLine("\t\t\tDiscount: "+ Discount);
+            Console.WriteLine("  \t\t\tTotal: " + TotalCost);
+            Console.WriteLine("\n\t\tPress Any Key To Close Window");
+            Console.ReadKey();   
             }
         }
 } 
