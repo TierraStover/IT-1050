@@ -103,9 +103,6 @@ namespace assignmentFour
                     Console.WriteLine(" \t\tYou Have Earned $" + Tickets.offTix + " OFF Your Ticket(s): ");
                 }
             }
-            else
-            {
-            }
         }
     }
 }

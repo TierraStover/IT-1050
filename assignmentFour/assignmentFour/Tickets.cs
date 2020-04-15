@@ -107,7 +107,6 @@ namespace assignmentFour
             Console.WriteLine("\t | (1) - To Purchase Movie Tickets For The Matinee Showings. | ");
             Console.WriteLine("\t | (2) - To Purchase Movie Tickets For The Evening Showings. | ");
             Console.WriteLine("\t ************************************************************* ");
-
         }
 
     }
