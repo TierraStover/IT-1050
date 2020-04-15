@@ -13,7 +13,7 @@ namespace assignmentFour
             Console.WriteLine(" \t\t\t*** DISCOUNTS AND PROMOTIONS ***");
             Console.WriteLine(" \n\t 1) Each Purchase Of A Popcorn And A Large Drink");
             Console.WriteLine(" \t\t Earns $2 OFF Of One Movie Ticket.");
-            Console.WriteLine(" \n\t 2)If 3 OR More People Purchase Tickets To An Evening Show");
+            Console.WriteLine(" \n\t 2)The Purchase of 3 OR More Tickets To An Evening Show");
             Console.WriteLine(" \t\t\t Earns 1 FREE Bag Of Popcorn. ");
             Console.WriteLine(" \n\t 3) For Each 3 Boxes of Candy, You Earn A 4th Box Of Candy For Free.\n");
             
@@ -26,19 +26,19 @@ namespace assignmentFour
             Console.WriteLine("\n\tThe Stover-Cunningham Movie Theater Receipt");
 
             Tickets.TicketCost = Tickets.mTicketCost + Tickets.eTicketCost;
-           
-            if (Concession.Candy >= 4 || Concession.Candy % 4==0)
+
+            if (Concession.Candy >= 4 || Concession.Candy % 4 == 0)
             {
                 Concession.FreeCandy = (Concession.Candy / 4) * 1.99;
                 Concession.cDiscount = Concession.ConcessionCost - Concession.FreeCandy;
-                Console.WriteLine(" \n\t\tYou Earned "  + Concession.Candy / 4 + " Free Boxes of Candy ");
+                Console.WriteLine(" \n\t\tYou Earned " + Concession.Candy / 4 + " Free Boxes of Candy ");
             }
             else
             {
 
             }
-                
-            if (Tickets.eTickets >= 3 && Concession.Popcorn>0)
+
+            if (Tickets.eTickets >= 3 && Concession.Popcorn > 0)
             {
                 Concession.offPop = 4.50;
                 Concession.pDiscount = Concession.pPrice - Concession.offPop;
@@ -68,15 +68,17 @@ namespace assignmentFour
             {
             }
 
-            double Discount=Concession.FreeCandy + Tickets.offTix + Concession.offPop;
-            double TotalCost = ((Tickets.TicketCost + Concession.ConcessionCost)-Discount);
+           double Discount=Concession.FreeCandy + Tickets.offTix + Concession.offPop;
+           double TotalCost = ((Tickets.TicketCost + Concession.ConcessionCost)-Discount);
 
             Console.WriteLine(" \n\t\t\tTickets: " + Tickets.TicketCost);
             Console.WriteLine( "\t\t\tConcession: " + Concession.ConcessionCost);
             Console.WriteLine("\t\t\tDiscount: "+ Discount);
             Console.WriteLine("  \t\t\tTotal: " + TotalCost);
             Console.WriteLine("\n\t\tPress Any Key To Close Window");
-            Console.ReadKey();   
+            
+            Console.ReadKey();
+            
             }
         }
 } 
