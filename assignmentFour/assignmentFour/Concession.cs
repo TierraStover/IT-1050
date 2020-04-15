@@ -8,10 +8,11 @@ namespace assignmentFour
 {
     class Concession
     {
+
         public static double ConcessionCost;
         public static double Popcorn;
         public static double lDrink;
-        public static double Candy;
+        public static int Candy;
         public static double FreeCandy;
         public static double cDiscount;
         public static double pDiscount;
@@ -36,7 +37,7 @@ namespace assignmentFour
                 double hDog = double.Parse(Console.ReadLine());
 
                 Console.Write(" How Many Boxes Of Candy? : ");
-                Candy = double.Parse(Console.ReadLine());
+                Candy = int.Parse(Console.ReadLine());
 
                 Console.Write(" How Many Bags Of Popcorn? : ");
                 Popcorn = double.Parse(Console.ReadLine());
@@ -67,8 +68,43 @@ namespace assignmentFour
             else
             {
 
-                Console.WriteLine(" \nInvalid Choice.");
+                Console.WriteLine(" \nInvalid Choice. Please Press Y or N.");
                 GetConcession();
+            }
+        }
+        public void GetDiscount()
+        {
+            if (Concession.Candy >= 4)
+            {
+                Concession.FreeCandy = (Concession.Candy / 4) * 1.99;
+                Concession.cDiscount = Concession.ConcessionCost - Concession.FreeCandy;
+                Console.WriteLine(" \t\tYou Earned " + Concession.Candy / 4 + " Free Box(es) of Candy ");
+            }
+
+            if (Tickets.eTickets >= 3 && Concession.Popcorn > 0)
+            {
+                Concession.offPop = 4.50;
+                Concession.pDiscount = Concession.pPrice - Concession.offPop;
+                Console.WriteLine(" \t\tYou Have Earned 1 FREE Popcorn");
+            }
+            
+            if (Concession.Popcorn >= 1 && Concession.lDrink >= 1)
+            {
+                if (Concession.Popcorn < Concession.lDrink)
+                {
+                    Tickets.offTix = Concession.Popcorn * 2;
+                    Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
+                    Console.WriteLine(" \t\tYou Have Earned $" + Tickets.offTix + " OFF Your Ticket(s) ");
+                }
+                else
+                {
+                    Tickets.offTix = Concession.lDrink * 2;
+                    Tickets.TixDiscount = Tickets.TicketCost - Tickets.offTix;
+                    Console.WriteLine(" \t\tYou Have Earned $" + Tickets.offTix + " OFF Your Ticket(s): ");
+                }
+            }
+            else
+            {
             }
         }
     }
