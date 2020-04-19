@@ -25,7 +25,7 @@ namespace assignmentFive
         }
         public string GetPerson()
         {
-            return "Hello, My Name is "+ this.FirstName + " " + this.LastName +".";
+            return "Hello, My Name Is "+ this.FirstName + " " + this.LastName +".";
         }
 
     }
