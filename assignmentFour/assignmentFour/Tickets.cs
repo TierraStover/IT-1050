@@ -83,7 +83,7 @@ namespace assignmentFour
             double aPrice = aTix * 10.99;
             Console.WriteLine(" " + aTix + " Adult Ticket(s) Costs " + aPrice + " Dollars In Total.");
 
-            double sPrice = sTix * 8.50f;
+            double sPrice = sTix * 8.50;
             Console.WriteLine(" " + sTix + " Senior Ticket(s) Costs " + sPrice + " Dollars In Total.");
 
             eTicketCost = cPrice + aPrice + sPrice;
