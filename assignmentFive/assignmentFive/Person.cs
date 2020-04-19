@@ -16,9 +16,16 @@ namespace assignmentFive
             this.FirstName = FirstName;
             this.LastName = LastName;
         }
+
+        public void SetName(string FirstName, string LastName)
+        {
+
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+        }
         public string GetPerson()
         {
-            return this.FirstName + " " + this.LastName;
+            return "Hello, My Name is "+ this.FirstName + " " + this.LastName +".";
         }
 
     }
