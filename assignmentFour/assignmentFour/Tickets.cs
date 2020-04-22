@@ -50,17 +50,17 @@ namespace assignmentFour
             double sTix = double.Parse(Console.ReadLine());
 
             double cPrice = cTix * 3.99;
-            Console.WriteLine("\n " + cTix + " Child Ticket(s) Costs " + cPrice + " Dollars In Total.");
+            Console.WriteLine("\n " + cTix + " Child Ticket(s) Costs " + cPrice.ToString("0.00") + " Dollars In Total.");
 
             double aPrice = aTix * 5.99;
-            Console.WriteLine(" " + aTix + " Adult Ticket(s) Costs " + aPrice + " Dollars In Total.");
+            Console.WriteLine(" " + aTix + " Adult Ticket(s) Costs " + aPrice.ToString("0.00") + " Dollars In Total.");
 
             double sPrice = sTix * 4.50;
-            Console.WriteLine(" " + sTix + " Senior Ticket(s) Costs " + sPrice + " Dollars In Total.");
+            Console.WriteLine(" " + sTix + " Senior Ticket(s) Costs " + sPrice.ToString("0.00") + " Dollars In Total.");
 
             mTicketCost = cPrice + aPrice + sPrice;
 
-            Console.WriteLine(" \n\tThe Total Cost Of Your Matinee Tickets Are: " + mTicketCost + " Dollars.");
+            Console.WriteLine(" \n\tThe Total Cost Of Your Matinee Tickets Are: " + mTicketCost.ToString("0.00") + " Dollars.");
         }
         public void GetETix()
         {
@@ -78,16 +78,16 @@ namespace assignmentFour
             eTickets = cTix + aTix + sTix;
 
             double cPrice = cTix * 6.99;
-            Console.WriteLine("\n " + cTix + " Child Ticket(s) Costs " + cPrice + " Dollars In Total.");
+            Console.WriteLine("\n " + cTix + " Child Ticket(s) Costs " + cPrice.ToString("0.00") + " Dollars In Total.");
 
             double aPrice = aTix * 10.99;
-            Console.WriteLine(" " + aTix + " Adult Ticket(s) Costs " + aPrice + " Dollars In Total.");
+            Console.WriteLine(" " + aTix + " Adult Ticket(s) Costs " + aPrice.ToString("0.00") + " Dollars In Total.");
 
             double sPrice = sTix * 8.50;
-            Console.WriteLine(" " + sTix + " Senior Ticket(s) Costs " + sPrice + " Dollars In Total.");
+            Console.WriteLine(" " + sTix + " Senior Ticket(s) Costs " + sPrice.ToString("0.00") + " Dollars In Total.");
 
             eTicketCost = cPrice + aPrice + sPrice;
-            Console.WriteLine("\n\t The Total Cost Of Your Evening Tickets Are: " + eTicketCost + " Dollars.");
+            Console.WriteLine("\n\t The Total Cost Of Your Evening Tickets Are: " + eTicketCost.ToString("0.00") + " Dollars.");
         }
         public void GetDiscountList()
         {

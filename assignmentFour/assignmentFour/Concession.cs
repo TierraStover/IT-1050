@@ -43,27 +43,27 @@ namespace assignmentFour
                 Popcorn = double.Parse(Console.ReadLine());
 
                 double lDPrice = lDrink * 5.99;
-                Console.WriteLine("\n " + lDrink + " Large Drink(s) Costs " + lDPrice + " Dollars In Total.");
+                Console.WriteLine("\n " + lDrink + " Large Drink(s) Costs " + lDPrice.ToString("0.00") + " Dollars In Total.");
 
                 double sDPrice = sDrink * 3.50;
-                Console.WriteLine(" " + sDrink + " Small Drink(s) Costs " + sDPrice + " Dollars In Total.");
+                Console.WriteLine(" " + sDrink + " Small Drink(s) Costs " + sDPrice.ToString("0.00") + " Dollars In Total.");
 
                 double hDPrice = hDog * 3.99;
-                Console.WriteLine(" " + hDog + " Hot Dog(s) Costs " + hDPrice + " Dollars In Total.");
+                Console.WriteLine(" " + hDog + " Hot Dog(s) Costs " + hDPrice.ToString("0.00") + " Dollars In Total.");
 
                 double cPrice = Candy * 1.99;
-                Console.WriteLine(" " + Candy + " Box Of Candy Costs " + cPrice + " Dollars In Total.");
+                Console.WriteLine(" " + Candy + " Box Of Candy Costs " + cPrice.ToString("0.00") + " Dollars In Total.");
 
                 double pPrice = Popcorn * 4.50;
-                Console.WriteLine(" " + Popcorn + " Bag Of Popcorn " + pPrice + " Dollars In Total.");
+                Console.WriteLine(" " + Popcorn + " Bag Of Popcorn " + pPrice.ToString("0.00") + " Dollars In Total.");
 
                 ConcessionCost = sDPrice + lDPrice + hDPrice + cPrice + pPrice;
-                Console.WriteLine(" \n\tThe Total Cost Of Your Concession Items Are: " + ConcessionCost + " Dollars.");
+                Console.WriteLine(" \n\tThe Total Cost Of Your Concession Items Are: " + ConcessionCost.ToString("0.00") + " Dollars.");
             }
             else if (Snackchoice == "n" || Snackchoice == "N")
             {
                 ConcessionCost = 0;
-                Console.WriteLine("\n\tThe Total Cost Of Your Concession Items Are: " + ConcessionCost + " Dollars.");
+                Console.WriteLine("\n\tThe Total Cost Of Your Concession Items Are: " + ConcessionCost.ToString("0.00") + " Dollars.");
             }
             else
             {
