@@ -16,14 +16,14 @@ namespace finalExam
             this.Weight = weight;
         }
 
-        public string GetName()
+        public string GetName(string Name)
         {
-            return this.Name;
+            return Name;
         }
 
         public double GetWeight()
         {
-            return this.Weight;
+            return Weight;
         }
     }
 }

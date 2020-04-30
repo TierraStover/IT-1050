@@ -9,19 +9,26 @@ namespace finalExam
     class Elevator
     {
        private double MaxWeight;
-       private Passenger[] Occupants;
+       private Passenger[]Occupants;
        public Elevator(int maxOccupants, double maxWeight)
         {
-            Passenger[] Occupants = new Passenger[maxOccupants];
+            Occupants = new Passenger[maxOccupants];
             this.MaxWeight = maxWeight;
         }
         public void AddOccupant(Passenger passenger, int index)
         {
-          Passenger[] Occupants= new Passenger[index];
+            Occupants[index]=passenger;
         }
         public double GetCurrentWeight()
         {
-            return;
+            double sumofweight=0;
+            
+            for (int i = 0; i < Occupants.Length; i++)
+            {
+              sumofweight += Occupants[i].GetWeight();
+            }
+            
+            return sumofweight;
         }
         public bool IsOverMaxCapacity()
         {
